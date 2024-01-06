@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+body {
+    height: 100vh;
+    margin: 0; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    background-image: linear-gradient(to top left, #272626 0%, #a9a9a9 100%);
+    text-align: center;
+}
+
+#game-container {
+    width: 600px;
+    padding: 20px;
+    background-color: #585555;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cards-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.card {
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(48, 48, 48);
+    color: rgb(199, 194, 194);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#score-container {
+    margin: 20px 0;
+    font-size: 20px;
+}
